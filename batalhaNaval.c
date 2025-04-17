@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include <locale.h>
+#include <locale.h> //Para usar o setlocale
 
 int main()
-{ setlocale(LC_ALL, "Portuguese_Brazil");
+{ setlocale(LC_ALL, "Portuguese_Brazil"); //Para corrigir problemas de pontuação e acentuação
 
     int tabuleiro[10][10] = {0};
-    int navio1 [3] = {3, 3, 3, 3}, navio2[3] = {3, 3, 3};
+    int navio1 [3] = {3, 3, 3}, navio2[3] = {3, 3, 3};
 
     //Determinação de posição do navio1 (Horizontal)
     tabuleiro[3][4] = navio1[0];
